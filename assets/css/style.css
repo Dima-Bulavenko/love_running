@@ -27,7 +27,9 @@ header {
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a {
@@ -64,16 +66,30 @@ nav {
     left: 0;
     top: 99%;
     padding: inherit;
-    top: 99%;
     box-shadow: inherit;
     display: none;
 }
+
+/* Nav toggel */
+#nav-toggel {
+    display: none;
+}
+
+#nav-toggel:checked~nav {
+    display: block;
+}
+
+.nav-toggel-label {
+    font-size: 2rem;
+}
+
 
 /* Main content */
 main {
     background-color: aquamarine;
     /* Make main element take up any surplus space to push the footer down*/
     flex: 1 0 auto;
+    margin-top: 47px;
 }
 
 /* Footer */
